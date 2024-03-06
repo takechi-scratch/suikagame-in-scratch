@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="expires" content="0">
+
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="author" content="takechi">
+<meta name="robots" content="INDEX,FOLLOW" />
+<title>takechiのホームページ</title>
+<link rel="icon" href="/takechi_icon.jpg">
+<link rel="stylesheet" href="/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="自分のサイトのパスにあわせて/fullcalendar.css">
+<script src="自分のサイトのパスにあわせて/lib/moment.min.js"></script>
+<script src="自分のサイトのパスにあわせて/lib/jquery.min.js"></script>
+<script src="自分のサイトのパスにあわせて/fullcalendar.min.js"></script>
+<script src="自分のサイトのパスにあわせて/gcal.min.js"></script>
+<script src="自分のサイトのパスにあわせて/lang/ja.js"></script>
+<script src='自分のサイトのパスにあわせて/locale/ja.js'></script>
+<script> $(document).ready(function() { $('#calendar').fullCalendar({ header: { left: 'prev,next today', center: 'title', right: 'month,listYear' }, displayEventTime: false, googleCalendarApiKey: 'ここに取得したAPIキーを入力', events: 'ここにカレンダーIDを入力', eventClick: function(event) { // opens events in a popup window window.open(event.url, 'gcalevent', 'width=700,height=600'); return false; }, loading: function(bool) { $('#loading').toggle(bool); } }); }); </script>
+
+  
+</head>
+
+<script src="/header.js"></script>
+
+
+
+<body>
+
+<h1>スイカゲーム大会</h1>
+
+
+</body>
+</html>
