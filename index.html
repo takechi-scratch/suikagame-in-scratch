@@ -26,6 +26,19 @@
 <script src='自分のサイトのパスにあわせて/locale/ja.js'></script>
 <script> $(document).ready(function() { $('#calendar').fullCalendar({ header: { left: 'prev,next today', center: 'title', right: 'month,listYear' }, displayEventTime: false, googleCalendarApiKey: 'ここに取得したAPIキーを入力', events: 'ここにカレンダーIDを入力', eventClick: function(event) { // opens events in a popup window window.open(event.url, 'gcalevent', 'width=700,height=600'); return false; }, loading: function(bool) { $('#loading').toggle(bool); } }); }); </script>
 
+    <meta charset='utf-8' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
   
 </head>
 
